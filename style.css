@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+#gameCanvas {
+    border: 2px solid white;
+    background: #000;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#menu {
+    position: absolute;
+    bottom: 10px; /* ПЕРЕМЕСТИЛИ ВНИЗ */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+#score {
+    position: absolute;
+    top: 10px; /* ПЕРЕМЕСТИЛИ ВВЕРХ */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    z-index: 100;
+}
+
+button, input {
+    padding: 10px; /* УВЕЛИЧИЛИ для телефона */
+    margin: 5px;
+    font-size: 16px; /* УВЕЛИЧИЛИ шрифт */
+    border: 1px solid white;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    min-height: 44px; /* Минимальная высота для удобного нажатия */
+}
+
+input {
+    width: 80%;
+    max-width: 200px;
+    text-align: center;
+}
+
+/* Стили для кнопок при нажатии */
+button:active {
+    background: #333;
+}

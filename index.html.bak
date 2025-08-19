@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Multiplayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Подключаем Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="menu">
+            <input type="text" id="gameIdInput" placeholder="ID игры">
+            <button onclick="createGame()">Создать игру</button>
+            <button onclick="joinGame()">Присоединиться</button>
+        </div>
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div id="score">0 : 0</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
